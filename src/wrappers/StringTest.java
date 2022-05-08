@@ -70,16 +70,17 @@ public class StringTest {
             Scanner textIn = new Scanner(System.in);
             System.out.print("Input a text: ");
             String text = textIn.next();
+            System.out.println("You have entered: " + text);
             switch (text.toLowerCase().trim()) {
                 case "start":
                     System.out.println("Start the process...");
                     break;
                 case "end":
-                    System.out.println("Process completed");
+                    System.out.println("Process completed.");
                     isWorking = false;
                     break;
                 case "error":
-                    System.out.println("Program error");
+                    System.out.println("Program error!");
                     break;
                 default:
                     System.out.println("Unknown command");
